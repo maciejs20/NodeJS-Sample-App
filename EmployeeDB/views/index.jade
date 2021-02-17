@@ -14,4 +14,5 @@ block content
                 form( method="get", action="/employee/:id/edit") 
                     input(name="_id", type="hidden", value=employee._id.toHexString()) 
                     input(id="edit", value="Edit", type="submit")
+        div.space
         a(href="/employee/new")!= "Add New Employee"

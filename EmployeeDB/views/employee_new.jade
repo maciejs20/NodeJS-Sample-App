@@ -5,6 +5,7 @@ block content
     div.newemployee
         form( method="post")
             div
+                div.space
                 div
                     span.label Title :
                     input(type="text", name="title", id="editEmployeeTitle")
@@ -13,4 +14,5 @@ block content
                     input(type="text", name="name", id="editEmployeeName")
                 div#editEmployeeSubmit
                     input(type="submit", value="Save")
+                div.space
         a(href="/")!= "Back to Employee List"

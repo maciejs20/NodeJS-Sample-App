@@ -3,6 +3,9 @@ Employee Database
 
 **A sample Employee Database CRUD application with Node.js, Express and MongoDB.**
 
+This has been modified from original version to use new express library and polish the look.
+Here comes the original readme
+
 ## Requirements
 
 * Node

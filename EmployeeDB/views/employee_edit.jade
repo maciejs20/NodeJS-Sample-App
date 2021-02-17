@@ -6,6 +6,7 @@ block content
         form( method="post")
             input(name="_id", type="hidden", value=employee._id.toHexString()) 
             div
+                div.space
                 div
                     span.label Title :
                     input(type="text", name="title", id="editEmployeeTitle", value=[title])
@@ -14,4 +15,5 @@ block content
                     input(type="text", name="name", id="editEmployeeName", value=employee.name)
                 div#editEmployeeSubmit
                     input(type="submit", value="Update")
+                div.space
         a(href="/")!= "Back to Employee List"

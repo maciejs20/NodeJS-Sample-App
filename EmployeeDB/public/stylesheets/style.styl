@@ -1,12 +1,27 @@
 body
   padding: 50px
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
+  font: 75% georgia, sans-serif;
   font-size 13px
   text-align center
   text-stroke 1px rgba(255, 255, 255, 0.1)
   color #555
 a
-  color: #00B7FF
+  color: #FFF
+  background-color: #F27935;
+  text-decoration: none;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  padding: 12px 53px 12px 23px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bold;
+  position: relative;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  display: inline-block;
 h1, h2
   margin 0
   font-size 22px
@@ -14,6 +29,24 @@ h1, h2
 h1
   text-shadow 1px 2px 2px #ddd
   font-size 60px
+input
+  padding: 1px
+  text-decoration: none;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  padding: 2px 8px 2px 8px;
+  border-color: white
+  font-family: sans-serif;
+  font-weight: bold;
+  position: relative;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  display: inline-block;
+.space
+  padding: 10px
 #employees
   text-align left
   margin-left auto
@@ -21,23 +54,28 @@ h1
   width 320px
   .employee
     margin 20px
+    padding-bottom: 7px
     .created_at
         display none
     .title
         font-weight bold
         background-color #eee
+        font-size: 15px;
+        font-style: italic;
+        padding: 4px;
     .name
-        background-color #ffa
+        background-color #fff
+        padding-left: 10px
        input#delete
-    	   margin-top -17px
-    	   margin-left 255px
+    	   margin-top -40px
+    	   margin-left 240px
        input#edit
-    	   margin-top -20px
-    	   margin-left 215px
+    	   margin-top -22px
+    	   margin-left 188px
 .newemployee
     border 3px
     border-color #000
-    border-style dotted
+    background-color: #fbebde;
     width 450px
     margin-left auto
     margin-right auto

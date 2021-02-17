@@ -5,7 +5,7 @@ var BSON = require('mongodb').BSON;
 var ObjectID = require('mongodb').ObjectID;
 
 EmployeeProvider = function(host, port) {
-  this.db= new Db('node-mongo-employee', new Server(host, port, {safe: false}, {auto_reconnect: true}, {}));
+  this.db= new Db('node-mongo-employee', new Server(host, port, {safe: false }, {auto_reconnect: true}, {}));
   this.db.open(function(){});
 };
 
@@ -46,6 +46,7 @@ EmployeeProvider.prototype.findById = function(id, callback) {
 
 //save new employee
 EmployeeProvider.prototype.save = function(employees, callback) {
+    console.log("Save: ", employees);
     this.getCollection(function(error, employee_collection) {
       if( error ) callback(error)
       else {
